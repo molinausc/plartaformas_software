@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="b1e5_suscriptor" type="suscriptor.py" name="b1e5_suscriptor" output="screen">
+    </node>
+</launch>
