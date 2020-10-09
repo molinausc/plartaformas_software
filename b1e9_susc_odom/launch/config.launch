@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="b1e9_susc_odom" type="suscriptor.py" name="b1e9_susc_odom" output="screen"></node>
+</launch>

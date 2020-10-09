@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="b1e6_publi_enteros" type="publicador.py" name="b1e6_publi_enteros" output="screen"></node>
+</launch>

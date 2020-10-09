@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="b1e7_susc_enteros" type="suscriptor.py" name="b1e7_susc_enteros" output="screen"></node>
+</launch>
