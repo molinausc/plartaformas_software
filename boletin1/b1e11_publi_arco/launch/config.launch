@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="b1e11_publi_arco" type="publicador.py" name="b1e11_publi_arco" output="screen"></node>
+</launch>
