@@ -1,4 +1,0 @@
-<launch>
-	<node pkg="paquete_practica" type="practica.py" name="nodo_basico" output="screen">
-	</node>
-</launch>

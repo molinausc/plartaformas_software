@@ -1,4 +1,0 @@
-<launch>
-	<node pkg="paquete_suscriptor" type="suscriptor.py" name="nodo_suscriptor" output="screen">
-	</node>
-</launch>

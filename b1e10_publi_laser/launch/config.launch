@@ -1,3 +1,0 @@
-<launch>
-    <node pkg="b1e10_publi_laser" type="publicador.py" name="b1e10_publi_laser" output="screen"></node>
-</launch>
