@@ -2,8 +2,7 @@
 
 import rospy
 import math
-from std_msgs.msg import Int32 
-from std_msgs.msg import String 
+from std_msgs.msg import Int32 , String
 from sensor_msgs.msg import LaserScan
 
 def callback(msg):
@@ -26,22 +25,17 @@ def callback(msg):
     radsMin = minAng + incAng * posMin
     angMin = math.degrees(radsMin)
 
-    print("La menor distancia encontrada es %d, que se encuentra a %d grados." % distanciaMin, angMin)
-    pub.publish("La menor distancia encontrada es %d, que se encuentra a %d grados." % distanciaMin, angMin)
-
-def suscriptor():
-    rospy.Subscriber("scan", LaserScan, callback)
+    men = "La menor distancia encontrada es %f, que se encuentra a %f grados." % (distanciaMin, angMin)
+    print(men)
+    pub.publish(men)
 
 
 if  __name__ == '__main__':
 
-    rospy.init_node('b1e10_publi_laser') #por el momento no le metemos el argumento de anonymous = True
-    pub = rospy.Publisher("b1e10_publi_laser", String, queue_size=10)
-    rate = rospy.Rate(2) 
-    
-    try:
-        suscriptor()
-    except rospy.ROSInterruptException:
-        print("Se para la ejecucion")
+    rospy.init_node('b1e10_publi_laser',anonymous=True) 
+    pub = rospy.Publisher("b1e10_publi_laser", String, queue_size=1)
+        
+    rospy.Subscriber("/scan", LaserScan, callback)
+    rospy.spin()
 
     

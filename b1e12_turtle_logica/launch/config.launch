@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="b1e12_turtle_logica" type="publicador.py" name="b1e12_turtle_logica" output="screen"></node>
+</launch>
