@@ -1,0 +1,5 @@
+<launch>
+    <!-- esta linea te permite incluir en el lanzamiento del nodo el lanzador del servicio para no tener que invocarlo tu con antelacion -->
+    <!-- <include file="$find servicio_simple_roberto/launch/por_defecto.launch"/> -->
+    <node pkg="b2e4_serv_bas" type="service.py" name="b2e4_serv_bas" output="screen"></node>
+</launch>

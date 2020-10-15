@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="servicio_simple_roberto" type="servidor_roberto.py" name="nodo_servidor_servicio_roberto" output="screen">
+    </node>
+</launch>
