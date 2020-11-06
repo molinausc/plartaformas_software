@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="ejer31" type="client.py" name="ejer31" output="screen"></node>
+</launch>

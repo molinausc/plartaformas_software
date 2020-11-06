@@ -1,0 +1,10 @@
+#goal
+int32 distancia
+---
+#result
+bool pillado 
+int32 distancia
+---
+#feedback 
+bool pillado 
+int32 distancia

@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="ejer2" type="paquete.py" name="ejer2" output="screen"></node>
+</launch>
