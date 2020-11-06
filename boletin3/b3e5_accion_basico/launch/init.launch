@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="b3e5_accion_basico" type="accion.py" name="b3e5_accion_basico" output="screen"></node>
+</launch>

@@ -1,0 +1,10 @@
+#goal
+int32 tiempo
+float32 velocidad
+---
+#result
+int32 resultado
+---
+#feedback 
+int32 tiempo 
+float32 proximidad

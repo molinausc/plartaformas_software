@@ -1,0 +1,5 @@
+<launch>
+    <!-- esta linea lanza el servidor de acciones al cual llamaremos despues -->
+    <!-- <include file="$(find b3e5_accion_basico)/launch/init.launch"/> -->
+    <node pkg="b3e5_cliente_accion" type="cliente.py" name="b3e5_cliente_accion" output="screen"></node>
+</launch>
